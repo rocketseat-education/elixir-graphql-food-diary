@@ -8,6 +8,7 @@ defmodule FoodDiary.Repo.Migrations.CreateMeals do
       add :category, :string
       add :user_id, references(:users, on_delete: :delete_all)
 
+
       timestamps()
     end
 
